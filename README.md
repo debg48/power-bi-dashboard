@@ -18,3 +18,7 @@ We createed a new table using CALENDERAUTO() DAX function , we end up having a t
 Now we check the model view to see that Power BI has automatically found relation between the three tables on basis of product id 
 
 <img src="Screenshot 2023-08-10 172627.png">
+
+Now we create a relation between Date of Sales table and Date Dim table we just created  and month of Budget table and Date of Date dim table by simply draging Date to the respective column names 
+
+<img src="Screenshot 2023-08-10 172627.png">
