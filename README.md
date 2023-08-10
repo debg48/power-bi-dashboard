@@ -39,4 +39,7 @@ Return
 CALCULATE(SUM(Sales[Sale Amount]),'Date Dim'[Year]=CY)
 ```
 
+```
+PY Sales = CALCULATE(([CY Sales],SAMEPERIODLASTYEAR('Date Dim'[Date]))
+```
 
