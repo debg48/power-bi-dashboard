@@ -43,3 +43,14 @@ CALCULATE(SUM(Sales[Sale Amount]),'Date Dim'[Year]=CY)
 PY Sales = CALCULATE(([CY Sales],SAMEPERIODLASTYEAR('Date Dim'[Date]))
 ```
 
+THe following measures for Budget Table :
+
+```
+Budget Sale = 
+Var CY = MAX('Date Dim'[Year])
+
+Return
+CALCULATE(SUM(Budget[Budgeted Amt]),'Date Dim'[Year]=CY)
+```
+
+
