@@ -43,6 +43,10 @@ CALCULATE(SUM(Sales[Sale Amount]),'Date Dim'[Year]=CY)
 PY Sales = CALCULATE(([CY Sales],SAMEPERIODLASTYEAR('Date Dim'[Date]))
 ```
 
+```
+YOY Sales Growth % = DIVIDE([CY Sales]-[PY Sales],[PY Sales],BLANK())
+```
+
 THe following measures for Budget Table :
 
 ```
