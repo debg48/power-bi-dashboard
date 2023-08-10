@@ -57,4 +57,9 @@ Return
 CALCULATE(SUM(Budget[Budgeted Amt]),'Date Dim'[Year]=CY)
 ```
 
+```
+Buget Variance % = DIVIDE([CY Sales]-[Budget Sale],Budget[Budget Sale],BLANK())
+```
+
+Now we start creating out vizualizations
 
