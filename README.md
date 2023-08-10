@@ -16,3 +16,5 @@ We createed a new table using CALENDERAUTO() DAX function , we end up having a t
 ``` 'date dim'[Date].[Quater] ```
 
 Now we check the model view to see that Power BI has automatically found relation between the three tables on basis of product id 
+
+<img src="Screenshot 2023-08-10 172627.png">
