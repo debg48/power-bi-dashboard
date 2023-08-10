@@ -22,3 +22,9 @@ Now we check the model view to see that Power BI has automatically found relatio
 Now we create a relation between Date of Sales table and Date Dim table we just created  and month of Budget table and Date of Date dim table by simply draging Date to the respective column names 
 
 <img src="Screenshot 2023-08-10 173241.png">
+
+We will hide the following colums from report view :
+
+ * From Budget table month and product id
+ * From Product Master product id
+ * From Sales date and product id
