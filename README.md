@@ -28,3 +28,15 @@ We will hide the following colums from report view :
  * From Budget table month and product id
  * From Product Master product id
  * From Sales date and product id
+
+In the report view we will create new measures as follows :
+
+```
+CY Sales = 
+Var CY = MAX('Date Dim'[Year])
+
+Return
+CALCULATE(SUM(Sales[Sale Amount]),'Date Dim'[Year]=CY)
+```
+
+
