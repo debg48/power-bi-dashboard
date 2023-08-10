@@ -29,7 +29,7 @@ We will hide the following colums from report view :
  * From Product Master product id
  * From Sales date and product id
 
-In the report view we will create new measures as follows :
+In the report view we will create new measures in Sales Table as follows :
 
 ```
 CY Sales = 
