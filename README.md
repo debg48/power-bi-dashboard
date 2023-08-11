@@ -7,13 +7,17 @@ Product Master table contains name and category of each product.
 
 We loaded the data in PowerBI 
 
-We createed a new table using CALENDERAUTO() DAX function , we end up having a table with a column of all the dates from or model . We add three more colums to this data using 'date dim'[Date] function as follows:
+We createed a new table using CALENDERAUTO() DAX function , we end up having a table with a column of all the dates from or model . We add four more colums to this data using 'date dim'[Date] function as follows:
 
 ``` 'date dim'[Date].[Year] ```
 
 ``` 'date dim'[Date].[Month] ```
 
 ``` 'date dim'[Date].[Quater] ```
+
+``` 'date dim'[Date].[MonthNo] ```
+
+We select the month column and sort it on basis of month number.
 
 Now we check the model view to see that Power BI has automatically found relation between the three tables on basis of product id 
 
@@ -47,7 +51,7 @@ PY Sales = CALCULATE(([CY Sales],SAMEPERIODLASTYEAR('Date Dim'[Date]))
 YOY Sales Growth % = DIVIDE([CY Sales]-[PY Sales],[PY Sales],BLANK())
 ```
 
-THe following measures for Budget Table :
+The following measures for Budget Table :
 
 ```
 Budget Sale = 
